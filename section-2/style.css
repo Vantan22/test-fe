@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFF9F5;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 76px;
+    margin: 66px auto 0 auto;
+    max-width: 1920px;
+}
+
+.header {
+    font-family: 'Instrument Serif', serif;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 61px; /* 105.172% */
+    letter-spacing: -0.58px;
+    color: #462B20;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    column-gap: 117px;
+}
+.content-left {
+    margin-top: 54px;
+}
+.image {
+    width: 560px;
+    height: 315px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+.collapses {
+    width: 560px;
+}
+.info-collapse {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 62px;
+    padding: 18px 0;
+    border-top: 1px solid #F3EAE5;
+}
+
+.info-collapse:last-child {
+    border-bottom: 1px solid #F3EAE5;
+}
+.collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collapse-title__content {
+    font-family: 'Instrument Serif', serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: #462B20;
+}
+
+.collapse-title__icon {
+    width: 24px;
+    height: 24px;
+    background: url('./icon/ic_arrow.svg') no-repeat center;
+    background-size: 24px;
+}
+
+
+.collapse-content {
+    max-height: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    overflow: hidden;
+    color: #42291FD9;
+}
+.active + .collapse-content {
+    height: max-content;
+    padding: 16px 0 24px 0;
+}
+.image-banner {
+    width: 706px;
+    height: 991px;
+    object-fit: cover;
+}
